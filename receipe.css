@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; 
+    background: rgb(255,247,247);
+    background: radial-gradient(circle, rgba(255,247,247,1) 4%, rgba(221,222,227,1) 100%);
+}
+
+.navcontainer{
+    width: 100vw;
+    background-color: #2f365a;
+    background-image: linear-gradient(43deg, #2f365a 0%, #542c54 30%, #a57b37 66%, #ffffff 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    padding: 15px;
+}
+
+#navlist{
+    width: 100%;
+    list-style: none;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navlogo{
+    font-size: 2.2rem;
+    color: cornsilk;
+}
+
+a{
+    text-decoration: none;
+    color: cornsilk;
+}
+
+#navitems{
+    display: flex;
+    gap: 40px;
+}
+
+.footer{
+    background-color: #2f365a;
+    background-image: linear-gradient(43deg, #2f365a 0%, #542c54 30%, #a57b37 66%, #ffffff 100%);
+    text-align: center;
+    min-height: 40px;
+}
+
+.footer p{
+    color: cornsilk;
+    font-size: 2rem;
+}
+
+.contentbox{
+    width: 65%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+   
+}
+
+.item{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(68, 63, 63, 0.466);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox:hover .overlay{
+    opacity:1;
+}
+
+.rightbox img{
+    height: 220px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+
+.rightbox:hover{
+    transform:scale(1.1)
+}
+
+.leftbox{
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+.leftbox h2{
+    font-size: 2rem;
+}
+
+.inbox{
+    font-size: 1.2rem;
+}
+
+.recepebox{
+    font-size: 1.1rem;
+}
+
+.rightbox .overlay span{
+    color:white;
+    font-size: 1.5rem;
+}
